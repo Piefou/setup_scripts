@@ -1,0 +1,17 @@
+alias dcont='sudo docker container'
+alias dimag='sudo docker image'
+alias dnetw='sudo docker network'
+alias dvolu='sudo docker volume'
+
+dtty() {
+	sudo docker container exec -it $1 /bin/sh
+}
+
+dstopall() {
+	sudo docker container stop $(docker container ls -q)
+}
+
+dremoveall() {
+	sudo docker container rm $(docker container ls -aq)
+}
+

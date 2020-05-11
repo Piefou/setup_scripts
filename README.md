@@ -1,2 +1,2 @@
-# bash_aliases
-A set of aliases for my usages
+# Setup
+Some bash scripts to init tools on a new Linux profile
