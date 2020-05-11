@@ -1,6 +1,6 @@
 #/bin/bash
 
-if [ $# -eq 1 ]; then
+if [ ! $# -eq 1 ]; then
 	echo "No arg, no setup"
 	exit
 fi
