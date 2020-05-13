@@ -8,10 +8,10 @@ dtty() {
 }
 
 dstopall() {
-	sudo docker container stop $(docker container ls -q)
+	sudo docker container stop $(sudo docker container ls -q)
 }
 
-dremoveall() {
-	sudo docker container rm $(docker container ls -aq)
+drmall() {
+	sudo docker container rm $(sudo docker container ls -aq)
 }
 
