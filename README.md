@@ -6,12 +6,22 @@ Some bash scripts to init tools on a new Linux profile
 ```
 ./setup.sh git
 ```
-Execute the 'git_config' file to configure global Git configuration
+Configure global Git configuration.
 
 ```
 ./setup.sh aliases
 ```
-Create a '~/.bash_aliases' file if it not exists, and append it the content of 'aliases' file.
+Create a '~/.bash_aliases' file if it not exists, and add new aliases.
+
+```
+./setup.sh docker-ubuntu
+```
+Install Docker Engine and Portainer on a Ubuntu distribution.
+
+```
+./setup.sh docker-fedora
+```
+Install Docker Engine and Portainer on a Fedora distribution.
 
 
 # My stack
@@ -19,6 +29,12 @@ Create a '~/.bash_aliases' file if it not exists, and append it the content of '
 - VLC
 - Notepad++
 - VSCode
+  - C/C++ Extension Pack
+  - Debugger for Firefox
+  - Git extension Pack
+  - Remote Development Pack
+- WSL2 with Ubuntu
+  - Docker
 - 7-zip
 - Libreoffice
 - Git

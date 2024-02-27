@@ -30,7 +30,24 @@ fi
 
 if [ $1 = "git" ]; then
 	echo "- Configuring git profile"
-	chmod u+x $SCRIPT_DIR/git_config
-	$SCRIPT_DIR/git_config
+	chmod u+x $SCRIPT_DIR/git_config.sh
+	$SCRIPT_DIR/git_config.sh
 fi
 
+##########
+# DOCKER #
+##########
+
+# Installation process from https://docs.docker.com/engine/install/ubuntu/
+if [ $1 = "docker-ubuntu" ]; then
+	echo "- Installing Docker"
+	chmod u+x $SCRIPT_DIR/docker-ubuntu.sh
+	$SCRIPT_DIR/docker-ubuntu.sh
+fi
+
+# Installation process from https://docs.docker.com/engine/install/fedora/
+if [ $1 = "docker-fedora" ]; then
+	echo "- Installing Docker"
+	chmod u+x $SCRIPT_DIR/docker-fedora.sh
+	$SCRIPT_DIR/docker-fedora.sh
+fi
